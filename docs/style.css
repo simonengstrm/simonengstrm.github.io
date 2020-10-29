@@ -57,11 +57,17 @@ div {
     color: gray;
 }
 
-content img {
+content img.GitHub {
+    float: left;
+}
+
+#me {
     float:right;    
     max-height: inherit;
     padding: 10px;
 }
+
+
 
 footer {
     text-align: center;
