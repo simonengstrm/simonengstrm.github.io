@@ -7,10 +7,8 @@ html {
 
 }
 
-.center {
-    width: 60%;
-    text-align: auto;
-    margin: auto;
+div {
+    padding-bottom: 15px;
 }
 
 .rub {
@@ -18,7 +16,35 @@ html {
     font-size: 50px;
 }
 
+.center {
+    width: 60%;
+    text-align: auto;
+    margin: auto;
+}
+
+.navbar {
+    text-align: center;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar li {
+    float: left;
+}
+
+.navbar a {
+    padding: 8px;
+    text-align: center;
+    color: black;
+    font-size: 20px;
+}
+
 img.content {
     width: 50%;
     float:right;
+    padding: 10px;
 }
