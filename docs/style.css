@@ -7,13 +7,25 @@ html {
 
 }
 
-div {
-    padding-bottom: 15px;
+body {
+    margin: 0;
+    margin-top: 0;
 }
 
-.rub {
+header {
     text-align: center;
-    font-size: 50px;
+    font-size: 30px;
+    background-color: gray;
+    
+}
+
+header h1 {
+    margin: 0;
+    padding: 10px;
+}
+
+div {
+    padding-bottom: 10px;
 }
 
 .center {
@@ -22,29 +34,45 @@ div {
     margin: auto;
 }
 
-.navbar {
-    text-align: center;
-}
-
 .navbar ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
+    text-align: center;
 }
 
 .navbar li {
-    float: left;
+    display: inline;
 }
 
 .navbar a {
-    padding: 8px;
+    padding: 4px;
     text-align: center;
     color: black;
     font-size: 20px;
+    font-weight: bold;
 }
 
-img.content {
-    width: 50%;
-    float:right;
+.navbar a:hover {
+    color: gray;
+}
+
+content img {
+    float:right;    
+    max-height: inherit;
     padding: 10px;
+}
+
+footer {
+    text-align: center;
+    position:fixed;
+    background-color: gray;
+    padding: 10px;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
 }
