@@ -1,4 +1,13 @@
-body {
-    background: rgb(0,0,0);
-    background: linear-gradient(180deg, rgba(0,0,0,1) 17%, rgba(32,32,32,1) 39%, rgba(56,56,56,1) 59%, rgba(78,78,78,1) 71%, rgba(114,114,114,1) 92%, rgba(255,255,255,1) 100%);
+html {
+    height: 100%;
+    background-repeat: no-repeat;
+    background-color: #D9AFD9;
+    background-image: linear-gradient(0deg, #D9AFD9 0%, #97D9E1 100%);
+}
+
+.rub {
+    margin-top: -5px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50px;
+    text-align: center;
 }
