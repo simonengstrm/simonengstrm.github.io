@@ -1,3 +1,4 @@
 body {
-    background-image: url('/src/polygon.jpg');
+    background: rgb(0,0,0);
+    background: linear-gradient(180deg, rgba(0,0,0,1) 17%, rgba(32,32,32,1) 39%, rgba(56,56,56,1) 59%, rgba(78,78,78,1) 71%, rgba(114,114,114,1) 92%, rgba(255,255,255,1) 100%);
 }
