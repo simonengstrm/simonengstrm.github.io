@@ -15,25 +15,10 @@ html {
 
 .rub {
     text-align: center;
-    margin-top: -5px;
     font-size: 50px;
 }
 
-div.navbar {
-    height: 40px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-.navlist {
-    text-align: center;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-
-.navlist.li {
-    display: inline;
-    float: center;
-    display: block;
-    padding: 8px;   
+img.content {
+    width: 50%;
+    float:right;
 }
