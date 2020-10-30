@@ -126,6 +126,15 @@ footer img {
     transform: translate(-50%, -50%);
 }
 
+.arrowdown {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50px;
+    height: 50px;
+}
+
 .rubrik {
     font-size: 60px;
 }
@@ -146,5 +155,8 @@ footer img {
     .onimage {
         top: 50%;
         left: 50%;
+    }
+    .arrowdown {
+        visibility: hidden;
     }
   }
