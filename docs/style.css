@@ -116,6 +116,11 @@ footer img {
     height: auto;
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+}
+
 .onimage {
     position: absolute;
     top: 20%;
