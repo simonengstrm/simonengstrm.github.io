@@ -6,15 +6,16 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="style.css">
         <link rel="shortcut icon" href="./src/lillelinkicon.png">
+        <script src="script.js"></script>
     </head>
     
-    <body>
+    <body onload="rubAnimation()">
         <header>
             <div id="imghead">
                 <img src="./src/norway.jpg">
                 <p style="font-style: italic; float: right;">Norway, 2016</p>
                 <div class="onimage">
-                    <h1 class="rubrik uppercase">Simon Engström</h1>
+                    <h1 id="rubrik" class="rubrik uppercase">Simon Engström</h1>
                     <div class="navbar uppercase">
                         <ul>
                             <li><a href="#aboutme">About me</a></li>
