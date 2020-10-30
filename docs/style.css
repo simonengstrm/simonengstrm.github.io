@@ -15,6 +15,10 @@ body {
     margin: 0;
 }
 
+a {
+    color: black;
+}
+
 .center {
     width: 60%;
     text-align: auto;
