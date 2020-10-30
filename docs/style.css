@@ -86,16 +86,23 @@ header h1 {
 
 footer {
     text-align: center;
-    position:fixed;
-    background-color: gray;
+    position: absolute bottom;
+    background-color: black;
     padding: 10px;
     left: 0;
     bottom: 0;
     width: 100%;
+    height: auto;
+    color:white;
 }
 
-footer p {
-    margin: 0;
+footer img {
+    width: 32px;
+    height: 32px;
+}
+
+.invert {
+    filter: invert(100%);
 }
 
 #imghead {
