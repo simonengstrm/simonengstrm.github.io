@@ -126,6 +126,21 @@ footer img {
     transform: translate(-50%, -50%);
 }
 
+.pfp {
+    position: absolute; 
+    width: 300px;
+    height: 300px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.pfp img {
+    border-radius: 50%;
+    max-width: 50%;
+    height: auto;
+}
+
 .arrowdown {
     position: absolute;
     top: 80%;
@@ -157,6 +172,9 @@ footer img {
         left: 50%;
     }
     .arrowdown {
+        visibility: hidden;
+    }
+    .pfp {
         visibility: hidden;
     }
   }

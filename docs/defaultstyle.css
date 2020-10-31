@@ -109,13 +109,6 @@ footer img {
     height: auto;
 }
 
-.onimage {
-    position: absolute;
-    top: 20%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
 .card {
     border: 1px solid black;
     border-radius: 25px;
