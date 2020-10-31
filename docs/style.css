@@ -114,6 +114,15 @@ footer img {
     height: auto;
 }
 
+#mainimg {
+    -webkit-mask-image: linear-gradient(to top, transparent 10%, rgb(165, 170, 175) 90%);
+    mask-image: linear-gradient(to bottom, transparent 10%, rgb(165, 170, 175) 90%);
+}
+
+.center-text {
+    text-align: center;
+}
+
 .scaleimg {
     max-width: 100%;
     height: auto;
