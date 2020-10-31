@@ -85,7 +85,7 @@ header h1 {
 
 footer {
     text-align: center;
-    position: absolute;
+    position: absolute bottom;
     background-color: black;
     padding: 10px;
     left: 0;
@@ -114,6 +114,18 @@ footer img {
     top: 20%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+.card {
+    border: 1px solid black;
+    border-radius: 25px;
+    margin-bottom: 10px;
+    height: 300px;
+}
+
+.card:hover {
+    background-color: black;
+    color: white;   
 }
 
 .rubrik {
