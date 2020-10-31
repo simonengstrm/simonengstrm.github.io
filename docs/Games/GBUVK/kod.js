@@ -888,7 +888,7 @@ class Item {
 
 class vodkaBottle extends Item {
     constructor(type,x,y) {
-        super(type,"resources/props/vodkaBottle.png",x,y);
+        super(type,"resources/props/vodkabottle.png",x,y);
         this.testosteronValue = 50;
     }
 
