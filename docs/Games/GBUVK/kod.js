@@ -65,8 +65,8 @@ function init() {
     missSound=new sound("resources/sounds/miss.wav");
     backgroundSound=new sound("resources/sounds/soundtrack2.mp3");
     gameOverSound=new sound("resources/sounds/deathSound.mp3");
-    p2winSound=new sound("resources/sounds/p2wins.mp3");
-    p1winSound=new sound("resources/sounds/p1wins.mp3");
+    p2winSound=new sound("resources/sounds/p2Wins.mp3");
+    p1winSound=new sound("resources/sounds/p1Wins.mp3");
     jumpSound=new sound("resources/sounds/jumpsound.mp3");
     enrageSound = new sound("resources/sounds/enrage.mp3");
     kickSound = new sound("resources/sounds/kick.mp3");
