@@ -85,7 +85,7 @@ header h1 {
 
 footer {
     text-align: center;
-    position: absolute bottom;
+    position: fixed;
     background-color: black;
     padding: 10px;
     left: 0;

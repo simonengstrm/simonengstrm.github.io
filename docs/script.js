@@ -1,8 +1,5 @@
-function rubAnimation() {
-    var text = document.getElementById("rubrik");
-    fadeIn(text);
-}
-
-function fadeIn(text) {
-        
+function scrollToContent() {
+    var element = document.getElementById("content");
+    console.log("scrollar!")
+    element.scrollIntoView();
 }

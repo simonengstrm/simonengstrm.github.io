@@ -9,7 +9,7 @@
         <script src="script.js"></script>
     </head>
     
-    <body onload="rubAnimation()">
+    <body>
         <header>
             <div id="imghead">
                 <img id="mainimg" src="./src/norway.jpg">
@@ -26,11 +26,11 @@
                     </div>
                 </div>
                 <div class="pfp"><img class="scaleimg" src="src/student_kvad.JPG"></div>
-                <div class="arrowdown"><img src="src/arrowdown.png"></div>
+                <div class="arrowdown" onclick="scrollToContent()"><img src="src/arrowdown.png"></div>
             </div>
         </header>
         
-        <content>
+        <content id="content">
             <div class="row center">
                 <div class="col-12 center-text">
                     <h2 id="aboutme">About me:</h2>
