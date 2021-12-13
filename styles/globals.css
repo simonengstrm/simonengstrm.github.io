@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-html,body {
+html {
     @apply bg-canvas;
     @apply text-slate-300;
     @apply font-sans;
