@@ -44,7 +44,7 @@ function Content() {
                         <p className="text-2xl">Chalmers University of Technology</p>
                         <p className="italic text-slate-400">2020 → now</p>
                         <p className="font-serif">I am currently studying my second year at Chalmers University of Technology, pursuing a bachelors degree,
-                        then a masters degree in Software Engineering. I am part of the <a href="https://digit.chalmers.it">digIT'21</a> committeé, 
+                        then a masters degree in Software Engineering. I am part of the <a href="https://digit.chalmers.it">digIT 21</a> committeé, 
                         which develops and maintains the many web services of the <a href="https://chalmers.it/">IT-division</a>.</p>
                     </div>
 
