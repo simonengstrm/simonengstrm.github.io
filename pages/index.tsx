@@ -110,7 +110,7 @@ function Content() {
 export default function Home() {
 
     return (
-        <div className="md:mx-40 mb-10">
+        <div className="md:mx- mb-10">
             <Header/>
             <Content/>
         </div>
