@@ -1,17 +1,23 @@
 import React, {useState} from 'react';
+import github from '../public/github.png';
+import linkedin from '../public/linkedin.png';
 
 function Header() {
 
     return (
         <div className="mt-10 ml-10 mr-10 mb-5">
             <p className="text-6xl tracking-wide font-bold">SIMON ENGSTRÖM</p>
+            <Links/>
         </div>
     )
 }
 
 function Links() {
     return (
-        <div></div>
+        <div className="grid grid-flow-col auto-cols-max gap-x-2">
+            <a href="https://github.com/lillelink"><img className="hover:scale-110" src={github.src} width={40}/></a>
+            <a href="https://www.linkedin.com/in/simon-engstr%C3%B6m-218622199/"><img className="hover:scale-110" src={linkedin.src} width={40}/></a>
+        </div>
     )
 }
 
