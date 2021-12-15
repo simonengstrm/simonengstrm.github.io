@@ -7,7 +7,9 @@ module.exports = {
   theme: {
     extend: {
       colors : {
-        canvas: "#0d1117"
+        canvas: "#181A1B",
+        standard: "#E8E6E3",
+        divider: "#363B3D"
       }
     },
 

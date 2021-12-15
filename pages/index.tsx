@@ -7,7 +7,7 @@ function Header() {
 
     return (
         <div className="mt-10 ml-10 mr-10 mb-5">
-            <div className="flex gap-x-4 grid-cols-1 md:grid-cols-2 md:auto-cols-min md:items-center">
+            <div className="flex gap-x-4 grid-cols-1 lg:grid-cols-2 lg:auto-cols-min lg:items-center">
                 <div className="min-w-fit">
                     <img src={profile.src} className="w-36 rounded-full "/>
                 </div>
@@ -51,14 +51,14 @@ function Content() {
                 In my spare time I enjoy developing hobby projects, listening to music and socializing.</p>
             </div> 
 
-            <div className="grid grid-cols-1 gap-y-10 overflow-hidden md:divide-slate-400 md:grid-cols-2 md:gap-x-10">
+            <div className="grid grid-cols-1 gap-y-10 overflow-hidden lg:divide-slate-400 lg:grid-cols-2 lg:gap-x-10">
                 <div className="space-y-8">
-                    <p className="font-bold text-3xl border-b-2">Work</p>
+                    <p className="font-bold text-3xl border-b-2 border-divider">Work experience</p>
 
                     <div>
                         <p className="text-2xl">Dialect IT Solutions</p>
                         <p className="italic text-slate-400">Technician/Developer: August 2020 → now</p>
-                        <p className="font-serif">Meanwhile studying at Chalmers in Gothenburg, I remain a part-time employee at Dialect, working with support during summers and 
+                        <p className="font-serif">While studying at Chalmers in Gothenburg, I remain a part-time employee at Dialect, working with support during summers and 
                         development of smaller features when I get the chance and find the time.
                         </p>
                     </div>
@@ -82,7 +82,7 @@ function Content() {
 
                 </div>
                 <div className="space-y-8">
-                    <p className="font-bold text-3xl border-b-2">School</p>
+                    <p className="font-bold text-3xl border-b-2 border-divider">Education</p>
                     <div>
                         <p className="text-2xl">Chalmers University of Technology</p>
                         <p className="italic text-slate-400">2020 → now</p>
@@ -110,7 +110,7 @@ function Content() {
 export default function Home() {
 
     return (
-        <div className="md:mx-40 mb-10">
+        <div className="lg:mx-40 mb-10">
             <Header/>
             <Content/>
         </div>
