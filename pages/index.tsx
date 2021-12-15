@@ -27,8 +27,8 @@ function Header() {
 function Links() {
     return (
         <div className="grid grid-flow-col auto-cols-max gap-x-2">
-            <a target="_blank" href="https://github.com/lillelink"><img className="hover:scale-110" src={github.src} width={40}/></a>
-            <a target="_blank" href="https://www.linkedin.com/in/simon-engstr%C3%B6m-218622199/"><img className="hover:scale-110" src={linkedin.src} width={40}/></a>
+            <a target="_blank" rel="noreferrer" href="https://github.com/lillelink"><img className="hover:scale-110" src={github.src} width={40}/></a>
+            <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/simon-engstr%C3%B6m-218622199/"><img className="hover:scale-110" src={linkedin.src} width={40}/></a>
         </div>
     )
 }
