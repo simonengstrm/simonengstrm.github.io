@@ -9,7 +9,7 @@ function Header() {
         <div className="mt-10 ml-10 mr-10 mb-5">
             <div className="flex gap-x-4 grid-cols-1 md:grid-cols-2 md:auto-cols-min md:items-center">
                 <div className="min-w-fit">
-                    <img src={profile.src} className="w-48 rounded-full "/>
+                    <img src={profile.src} className="w-36 rounded-full "/>
                 </div>
                 <div className="flex flex-col">
                     <div>
@@ -27,8 +27,8 @@ function Header() {
 function Links() {
     return (
         <div className="grid grid-flow-col auto-cols-max gap-x-2">
-            <a href="https://github.com/lillelink"><img className="hover:scale-110" src={github.src} width={40}/></a>
-            <a href="https://www.linkedin.com/in/simon-engstr%C3%B6m-218622199/"><img className="hover:scale-110" src={linkedin.src} width={40}/></a>
+            <a target="_blank" href="https://github.com/lillelink"><img className="hover:scale-110" src={github.src} width={40}/></a>
+            <a target="_blank" href="https://www.linkedin.com/in/simon-engstr%C3%B6m-218622199/"><img className="hover:scale-110" src={linkedin.src} width={40}/></a>
         </div>
     )
 }
