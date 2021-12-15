@@ -7,9 +7,9 @@ function Header() {
 
     return (
         <div className="mt-10 ml-10 mr-10 mb-5">
-            <div className="flex gap-x-4 grid-cols-1 lg:grid-cols-2 lg:auto-cols-min lg:items-center">
+            <div className="flex md:gap-x-4 flex-col gap-y-4 md:flex-row md:auto-cols-min md:items-center">
                 <div className="min-w-fit">
-                    <img src={profile.src} className="w-36 rounded-full "/>
+                    <img src={profile.src} className="md:w-36 md:visible invisible w-0 rounded-full "/>
                 </div>
                 <div className="flex flex-col">
                     <div>
