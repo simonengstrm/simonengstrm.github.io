@@ -5,17 +5,29 @@ function Header() {
     return (
         <div className="mt-10 ml-10 mr-10 mb-5">
             <p className="text-6xl tracking-wide font-bold">SIMON ENGSTRÖM</p>
-            <p className="italic text-slate-400">aka simpen, sien, lillelink</p>
         </div>
+    )
+}
+
+function Links() {
+    return (
+        <div></div>
     )
 }
 
 function Content() {
 
+    function calcAge() {
+        var bday = new Date(2000,10,17);
+        var ageDiffMilliseconds = Date.now() - bday.getTime();
+        var ageDate = new Date(ageDiffMilliseconds);
+        return Math.abs(ageDate.getUTCFullYear() - 1970);
+    }
+
     return (
         <div className="grid place-content-right ml-10 mr-10">
             <p className="font-bold text-3xl">About me</p>
-            <p className="font-serif">I am a 21 year-old student currently residing in Gothenburg, Sweden, 
+            <p className="font-serif">I am a {calcAge()} year-old student currently residing in Gothenburg, Sweden, 
             where I study Software Engineering at Chalmers University of Technology. I am a hard working, social and open person.
             In my spare time I enjoy developing hobby projects, listening to music and socializing.</p> 
 
@@ -26,7 +38,8 @@ function Content() {
                         <p className="text-2xl">Chalmers University of Technology</p>
                         <p className="italic text-slate-400">2020 → now</p>
                         <p className="font-serif">I am currently studying my second year at Chalmers University of Technology, pursuing a bachelors degree,
-                        then a masters degree in Software Engineering.</p>
+                        then a masters degree in Software Engineering. I am part of the <a href="https://digit.chalmers.it">digIT'21</a> committeé, 
+                        which develops and maintains the many web services of the <a href="https://chalmers.it/">IT-division</a>.</p>
                     </div>
 
                     <div>
@@ -34,7 +47,7 @@ function Content() {
                         <p className="italic text-slate-400">2016 → 2019</p>
                         <p className="font-serif">I studied information technology with software development specialization. 
                         During the third year I was a student ambassador for the school.
-                        When graduating, I was awarded with best <a className="underline hover:text-slate-300" href="https://github.com/LilleLink/Gravity">graduation project</a>, 
+                        When graduating, I was awarded with best <a href="https://github.com/LilleLink/Gravity">graduation project</a>, 
                         best grades, and became valedictorian. 
                         </p>
                     </div>
