@@ -107,12 +107,25 @@ function Content() {
     )
 }
 
+function Footer() {
+
+    return (
+        <div className="mx-10 my-10 text-center">
+            <p>This website was made as a fun way to improve my react-ts skills and 
+                try out tailwind-css for the first time!<br/>
+                Heavily inspired by my friend <a target="_blank" rel="noreferrer" href="https://antonekstrom.se/">Anton Ekström</a>.
+            </p>
+        </div>
+    )
+}
+
 export default function Home() {
 
     return (
         <div className="lg:mx-40 mb-10">
             <Header/>
             <Content/>
+            <Footer/>
         </div>
     )
 }
