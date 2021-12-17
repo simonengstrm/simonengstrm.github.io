@@ -6,7 +6,7 @@ import profile from '../public/profile.jpeg'
 function Header() {
 
     return (
-        <div className="mt-10 ml-10 mr-10 mb-5">
+        <div className="mb-5">
             <div className="flex md:gap-x-4 flex-col gap-y-4 md:flex-row md:auto-cols-min md:items-center">
                 <div className="min-w-fit">
                     <img src={profile.src} className="md:w-36 md:visible invisible w-0 rounded-full "/>
@@ -43,7 +43,7 @@ function Content() {
     }
 
     return (
-        <div className="grid place-content-right ml-10 mr-10 gap-y-5">
+        <div className="grid place-content-right gap-y-5">
             <div>
                 <p className="font-bold text-3xl">About me</p>
                 <p className="font-serif">I am a {calcAge()} year-old student currently residing in Gothenburg, Sweden,
@@ -110,7 +110,7 @@ function Content() {
 function Footer() {
 
     return (
-        <div className="mx-10 my-10 text-center">
+        <div className="my-10 text-center">
             <p>This website was made as a fun way to improve my react-ts skills and 
                 try out tailwind-css for the first time!<br/>
                 Heavily inspired by my friend <a target="_blank" rel="noreferrer" href="https://antonekstrom.se/">Anton Ekström</a>.
@@ -122,7 +122,7 @@ function Footer() {
 export default function Home() {
 
     return (
-        <div className="lg:mx-40 mb-10">
+        <div className="mx-5 sm:mx-20 lg:mx-48 my-10">
             <Header/>
             <Content/>
             <Footer/>
