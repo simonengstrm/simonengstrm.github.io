@@ -11,7 +11,7 @@ function Header() {
         <div>
             <div className="flex md:gap-x-4 flex-col gap-y-4 md:flex-row md:auto-cols-min md:items-center">
                 <div className="min-w-fit">
-                    <img src={profile.src} className="md:w-36 md:visible invisible w-0 rounded-full "/>
+                    <img src={profile.src} className="md:w-36 md:visible invisible w-0 rounded-full bg-blend-darken"/>
                 </div>
                 <div className="flex flex-col">
                     <div>
@@ -31,8 +31,8 @@ function Links(props) {
 
     return (
         <div className={"grid grid-flow-col auto-cols-max gap-x-2" + (centered ? " justify-center" : "")}>
-            <a target="_blank" rel="noreferrer" href="https://github.com/lillelink"><img className="hover:scale-110" src={github.src} width={40}/></a>
-            <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/simon-engstr%C3%B6m-218622199/"><img className="hover:scale-110" src={linkedin.src} width={40}/></a>
+            <a target="_blank" rel="noreferrer" href="https://github.com/lillelink"><img className="transition duration-150 ease-in-out hover:scale-110" src={github.src} width={40}/></a>
+            <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/simon-engstr%C3%B6m-218622199/"><img className=" transition duration-150 ease-in-out hover:scale-110" src={linkedin.src} width={40}/></a>
         </div>
     )
 }
@@ -175,7 +175,7 @@ function Footer() {
 export default function Home() {
 
     return (
-        <div className="mx-5 sm:mx-20 lg:mx-48 my-10 space-y-10">
+        <div className="mx-5 sm:mx-20 lg:mx-48 my-10 space-y-10 animate-fade-in-down">
             <Header/>
             <About/>
             <div className="grid grid-cols-1 gap-y-10 md:grid-cols-2 md:gap-x-10 md:gap-y-0">
