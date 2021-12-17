@@ -7,6 +7,12 @@ import swedish from '../public/icons/sweden.png'
 
 function Header() {
 
+    function random() {
+        let titles : Array<string> = ["Chalmers SE student", "Software Engineering student", "Dark Mode Enthusiast", "Github Streak Addict"];
+        let randomIndex : number = Math.floor(Math.random()*titles.length);
+        return titles.at(randomIndex);
+    }
+
     return (
         <div>
             <div className="flex md:gap-x-4 flex-col gap-y-4 md:flex-row md:auto-cols-min md:items-center">
@@ -16,6 +22,7 @@ function Header() {
                 <div className="flex flex-col">
                     <div>
                         <p className="text-6xl tracking-wide font-bold">SIMON ENGSTRÖM</p>
+                        <p className="text-slate-400 tracking-wide -mt-2"> - {random()}</p>
                     </div>
                     <div>
                         <Links centered={false}/>
@@ -77,8 +84,8 @@ function Technologies() {
                     <li>Java-FX</li>
                 </ul>
                 <ul>
-                    <li>Swedish <img src={swedish.src} className="inline w-5"/></li>
-                    <li>English <img src={english.src} className="inline w-5"/></li>
+                    <li>Swedish 🇸🇪</li>
+                    <li>English 🇬🇧</li>
                 </ul>            
             </div>
         </div>
