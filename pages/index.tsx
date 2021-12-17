@@ -2,6 +2,8 @@ import React, {useState} from 'react';
 import github from '../public/github.png';
 import linkedin from '../public/linkedin.png';
 import profile from '../public/profile.jpeg'
+import english from '../public/icons/english.png'
+import swedish from '../public/icons/sweden.png'
 
 function Header() {
 
@@ -46,9 +48,9 @@ function About() {
 
     return (
         <div>
-            <p className="font-bold text-3xl">About me</p>
+            <p className="font-bold text-3xl">Hi! 👋</p>
             <p className="font-serif">I am a {calcAge()} year-old student currently residing in Gothenburg, Sweden,
-            where I study Software Engineering at Chalmers University of Technology. I am a hard working, social and open person.
+            where I study Software Engineering at Chalmers University of Technology. I am a dedicated, social and open person.
             In my spare time I enjoy developing hobby projects, listening to music and socializing.</p>
         </div> 
     )
@@ -58,25 +60,25 @@ function Technologies() {
 
     return ( 
         <div>
-            <p className="font-bold text-3xl">Languages/tools</p>
-            <div className="flex columns-3 space-x-10">
+            <p className="font-bold text-3xl">Languages/tools 🧠</p>
+            <div className="flex columns-3 gap-x-10">
                 <ul>
-                    <li className="text-java">Java</li>
-                    <li className="text-haskell">Haskell</li>
-                    <li className="text-typescript">TypeScript</li>
-                    <li className="text-javascript">JavaScript</li>
-                    <li className="text-css">CSS</li>    
+                    <li>Java</li>
+                    <li>Haskell</li>
+                    <li>TypeScript</li>
+                    <li>JavaScript</li>
+                    <li>CSS</li>    
                 </ul>
                 <ul>
-                    <li className="text-orange-600">Git</li>
-                    <li className="text-purple-400">Maven</li>
-                    <li className="text-lime-500">node.js</li>
-                    <li className="text-lime-500">express</li>
-                    <li className="text-java">Java-FX</li>
+                    <li>Git</li>
+                    <li>Maven</li>
+                    <li>node.js</li>
+                    <li>express</li>
+                    <li>Java-FX</li>
                 </ul>
                 <ul>
-                    <li>Swedish</li>
-                    <li>English</li>
+                    <li>Swedish <img src={swedish.src} className="inline w-5"/></li>
+                    <li>English <img src={english.src} className="inline w-5"/></li>
                 </ul>            
             </div>
         </div>
@@ -87,10 +89,12 @@ function AwardsAndCertificates() {
     
     return (
         <div>
-            <p className="font-bold text-3xl">Awards/certificates</p>
-            <p><span className="text-amber-300">Valedictorian</span> - NTI Gymnasiet Skövde 2019</p>
-            <p><span className="text-amber-300">Mikrotik Certified Network Associate (MTCNA)</span> - Mikrotik, 2020</p>
-            <p><span className="text-amber-300">Rotary youth leadership award</span> - Rotary Skövde, 2018</p>
+            <p className="font-bold text-3xl">Awards/certificates 🏆</p>
+            <p>Valedictorian <span className="text-slate-400 italic">- NTI Gymnasiet Skövde 2019</span></p>
+            <p>Best Graduation Project <span className="text-slate-400 italic">- NTI Gymnasiet Skövde 2019</span></p>
+            <p>Mikrotik Certified Network Associate (MTCNA) <span className="text-slate-400 italic">- Mikrotik, 2020</span></p>
+            <p>Rotary Youth Leadership Award <span className="text-slate-400 italic">- Rotary Skövde, 2018</span></p>
+            <p>Best Grades <span className="text-slate-400 italic">- NTI Gymnasiet Skövde 2019</span></p>
         </div>
     )
 }
@@ -101,7 +105,7 @@ function Content() {
         <div className="grid place-content-start">
             <div className="grid grid-cols-1 overflow-hidden space-y-10 lg:space-y-0 lg:divide-slate-400 lg:grid-cols-2 lg:gap-x-10">
                 <div className="space-y-5">
-                    <p className="font-bold text-3xl border-b-2 border-divider">Work experience</p>
+                    <p className="font-bold text-3xl border-b-2 border-divider">Work experience 👨‍💻</p>
 
                     <div>
                         <p className="text-2xl">Dialect IT Solutions</p>
@@ -130,7 +134,7 @@ function Content() {
 
                 </div>
                 <div className="space-y-5">
-                    <p className="font-bold text-3xl border-b-2 border-divider">Education</p>
+                    <p className="font-bold text-3xl border-b-2 border-divider">Education 🎓</p>
                     <div>
                         <p className="text-2xl">Chalmers University of Technology</p>
                         <p className="italic text-slate-400">2020 → now</p>
@@ -158,8 +162,8 @@ function Content() {
 function Footer() {
 
     return (
-        <div className="text-center place-content-center">
-            <p>This website was made as a fun way to improve my react-ts skills and 
+        <div className="text-center place-content-center space-y-2">
+            <p className="text-slate-400">This website was made as a fun way to improve my react-ts skills and 
                 try out tailwind-css for the first time!<br/>
                 Heavily inspired by my friend <a target="_blank" rel="noreferrer" href="https://antonekstrom.se/">Anton Ekström</a>.
             </p>
