@@ -6,7 +6,7 @@ import profile from '../public/profile.jpeg'
 function Header() {
 
     return (
-        <div className="mb-5">
+        <div>
             <div className="flex md:gap-x-4 flex-col gap-y-4 md:flex-row md:auto-cols-min md:items-center">
                 <div className="min-w-fit">
                     <img src={profile.src} className="md:w-36 md:visible invisible w-0 rounded-full "/>
@@ -16,7 +16,7 @@ function Header() {
                         <p className="text-6xl tracking-wide font-bold">SIMON ENGSTRÖM</p>
                     </div>
                     <div>
-                        <Links/>
+                        <Links centered={false}/>
                     </div>
                 </div>
             </div>
@@ -24,16 +24,18 @@ function Header() {
     )
 }
 
-function Links() {
+function Links(props) {
+    let centered = props.centered;
+
     return (
-        <div className="grid grid-flow-col auto-cols-max gap-x-2">
+        <div className={"grid grid-flow-col auto-cols-max gap-x-2" + (centered ? " justify-center" : "")}>
             <a target="_blank" rel="noreferrer" href="https://github.com/lillelink"><img className="hover:scale-110" src={github.src} width={40}/></a>
             <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/simon-engstr%C3%B6m-218622199/"><img className="hover:scale-110" src={linkedin.src} width={40}/></a>
         </div>
     )
 }
 
-function Content() {
+function About() {
 
     function calcAge() {
         var bday = new Date(2000,10,17);
@@ -43,16 +45,62 @@ function Content() {
     }
 
     return (
-        <div className="grid place-content-right gap-y-5">
-            <div>
-                <p className="font-bold text-3xl">About me</p>
-                <p className="font-serif">I am a {calcAge()} year-old student currently residing in Gothenburg, Sweden,
-                where I study Software Engineering at Chalmers University of Technology. I am a hard working, social and open person.
-                In my spare time I enjoy developing hobby projects, listening to music and socializing.</p>
-            </div> 
+        <div>
+            <p className="font-bold text-3xl">About me</p>
+            <p className="font-serif">I am a {calcAge()} year-old student currently residing in Gothenburg, Sweden,
+            where I study Software Engineering at Chalmers University of Technology. I am a hard working, social and open person.
+            In my spare time I enjoy developing hobby projects, listening to music and socializing.</p>
+        </div> 
+    )
+}
 
-            <div className="grid grid-cols-1 gap-y-10 overflow-hidden lg:divide-slate-400 lg:grid-cols-2 lg:gap-x-10">
-                <div className="space-y-8">
+function Technologies() { 
+
+    return ( 
+        <div>
+            <p className="font-bold text-3xl">Languages/tools</p>
+            <div className="flex columns-3 space-x-10">
+                <ul>
+                    <li className="text-java">Java</li>
+                    <li className="text-haskell">Haskell</li>
+                    <li className="text-typescript">TypeScript</li>
+                    <li className="text-javascript">JavaScript</li>
+                    <li className="text-css">CSS</li>    
+                </ul>
+                <ul>
+                    <li className="text-orange-600">Git</li>
+                    <li className="text-purple-400">Maven</li>
+                    <li className="text-lime-500">node.js</li>
+                    <li className="text-lime-500">express</li>
+                    <li className="text-java">Java-FX</li>
+                </ul>
+                <ul>
+                    <li>Swedish</li>
+                    <li>English</li>
+                </ul>            
+            </div>
+        </div>
+    )
+}
+
+function AwardsAndCertificates() {
+    
+    return (
+        <div>
+            <p className="font-bold text-3xl">Awards/certificates</p>
+            <p><span className="text-amber-300">Valedictorian</span> - NTI Gymnasiet Skövde 2019</p>
+            <p><span className="text-amber-300">Mikrotik Certified Network Associate (MTCNA)</span> - Mikrotik, 2020</p>
+            <p><span className="text-amber-300">Rotary youth leadership award</span> - Rotary Skövde, 2018</p>
+        </div>
+    )
+}
+
+function Content() {
+
+    return (
+        <div className="grid place-content-start">
+            <div className="grid grid-cols-1 overflow-hidden space-y-10 lg:space-y-0 lg:divide-slate-400 lg:grid-cols-2 lg:gap-x-10">
+                <div className="space-y-5">
                     <p className="font-bold text-3xl border-b-2 border-divider">Work experience</p>
 
                     <div>
@@ -81,7 +129,7 @@ function Content() {
                     </div>
 
                 </div>
-                <div className="space-y-8">
+                <div className="space-y-5">
                     <p className="font-bold text-3xl border-b-2 border-divider">Education</p>
                     <div>
                         <p className="text-2xl">Chalmers University of Technology</p>
@@ -110,11 +158,12 @@ function Content() {
 function Footer() {
 
     return (
-        <div className="my-10 text-center">
+        <div className="text-center place-content-center">
             <p>This website was made as a fun way to improve my react-ts skills and 
                 try out tailwind-css for the first time!<br/>
                 Heavily inspired by my friend <a target="_blank" rel="noreferrer" href="https://antonekstrom.se/">Anton Ekström</a>.
             </p>
+            <Links centered={true}/>
         </div>
     )
 }
@@ -122,8 +171,13 @@ function Footer() {
 export default function Home() {
 
     return (
-        <div className="mx-5 sm:mx-20 lg:mx-48 my-10">
+        <div className="mx-5 sm:mx-20 lg:mx-48 my-10 space-y-10">
             <Header/>
+            <About/>
+            <div className="grid grid-cols-1 gap-y-10 md:grid-cols-2 md:gap-x-10 md:gap-y-0">
+                <Technologies/>
+                <AwardsAndCertificates/>
+            </div>
             <Content/>
             <Footer/>
         </div>
