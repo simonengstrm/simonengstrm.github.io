@@ -1,9 +1,8 @@
 import React, {useState} from 'react';
-import github from '../public/github.png';
-import linkedin from '../public/linkedin.png';
-import profile from '../public/profile.jpeg'
-import english from '../public/icons/english.png'
-import swedish from '../public/icons/sweden.png'
+import github from '../public/icons/github.png';
+import linkedin from '../public/icons/linkedin.png';
+import profile from '../public/icons/profile.jpeg'
+import mail from '../public/icons/mail.png'
 
 function Header() {
 
@@ -36,10 +35,23 @@ function Header() {
 function Links(props) {
     let centered = props.centered;
 
+    function Link(props) {
+        let href : string = props.href;
+        let image : StaticImageData = props.image;
+        let width : number = props.width;
+
+        return (
+            <a target="_blank" rel="noreferrer" href={href}>
+                <img className="transition duration-150 ease-in-out hover:scale-110" src={image.src} width={width}/>
+            </a>
+        )
+    }
+
     return (
         <div className={"grid grid-flow-col auto-cols-max gap-x-2" + (centered ? " justify-center" : "")}>
-            <a target="_blank" rel="noreferrer" href="https://github.com/lillelink"><img className="transition duration-150 ease-in-out hover:scale-110" src={github.src} width={40}/></a>
-            <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/simon-engstr%C3%B6m-218622199/"><img className=" transition duration-150 ease-in-out hover:scale-110" src={linkedin.src} width={40}/></a>
+            <Link href="https://github.com/lillelink" image={github} width={40}/>
+            <Link href="https://www.linkedin.com/in/simon-engstr%C3%B6m-218622199/" image={linkedin} width={40}/>
+            <Link href="mailto:simon_0_0_@live.se" image={mail} width={48}/>
         </div>
     )
 }
