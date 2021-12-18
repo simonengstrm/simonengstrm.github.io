@@ -7,9 +7,9 @@ import mail from '../public/icons/mail.png'
 function Header() {
 
     function random() {
-        let titles : Array<string> = ["Chalmers SE student", "Software Engineering student", "Dark Mode Enthusiast", "Github Streak Addict"];
+        let titles : string[] = ["Chalmers SE student", "Software Engineering student", "Dark Mode Enthusiast", "Github Streak Addict"];
         let randomIndex : number = Math.floor(Math.random()*titles.length);
-        return titles.at(randomIndex);
+        return titles[randomIndex];
     }
 
     return (
@@ -21,7 +21,7 @@ function Header() {
                 <div className="flex flex-col">
                     <div>
                         <p className="text-6xl tracking-wide font-bold">SIMON ENGSTRÖM</p>
-                        <p className="text-slate-400 tracking-wide -mt-2"> - {random()}</p>
+                        <p suppressHydrationWarning className="text-slate-400 tracking-wide -mt-2"> - {random()}</p>
                     </div>
                     <div>
                         <Links centered={false}/>
