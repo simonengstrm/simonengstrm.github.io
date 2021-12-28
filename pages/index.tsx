@@ -93,7 +93,7 @@ function Technologies() {
                     <li>Maven</li>
                     <li>node.js</li>
                     <li>express</li>
-                    <li>Java-FX</li>
+                    <li>Docker</li>
                 </ul>
                 <ul>
                     <li>Swedish 🇸🇪</li>
