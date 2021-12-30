@@ -184,7 +184,6 @@ function Footer() {
         <div className="text-center place-content-center space-y-2">
             <p className="text-slate-400">This website was made as a fun way to improve my react-ts skills and 
                 try out tailwind-css for the first time!<br/>
-                Heavily inspired by my friend <a target="_blank" rel="noreferrer" href="https://antonekstrom.se/">Anton Ekström</a>.
             </p>
             <Links centered={true}/>
         </div>
