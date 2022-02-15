@@ -193,7 +193,7 @@ function Footer() {
 export default function Home() {
 
     return (
-        <div className="mx-5 sm:mx-20 lg:mx-48 my-10 space-y-10 animate-fade-in-down">
+        <div className="px-5 sm:px-20 lg:px-48 py-10 space-y-10 animate-fade-in-down m-auto max-w-7xl">
             <Header/>
             <About/>
             <div className="grid grid-cols-1 gap-y-10 md:grid-cols-2 md:gap-x-10 md:gap-y-0">
