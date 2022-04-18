@@ -49,7 +49,7 @@ function Links(props) {
 
     return (
         <div className={"grid grid-flow-col auto-cols-max gap-x-2" + (centered ? " justify-center" : "")}>
-            <Link href="https://github.com/lillelink" image={github} width={40}/>
+            <Link href="https://github.com/simonengstrm" image={github} width={40}/>
             <Link href="https://www.linkedin.com/in/simon-engstr%C3%B6m-218622199/" image={linkedin} width={40}/>
             <Link href="mailto:simon_0_0_@live.se" image={mail} width={48}/>
         </div>
@@ -167,7 +167,7 @@ function Content() {
                         <p className="italic text-slate-400">2016 → 2019</p>
                         <p className="font-serif">I studied information technology with software development specialization. 
                         During the third year I was a student ambassador for the school.
-                        When graduating, I was awarded with best <a href="https://github.com/LilleLink/Gravity">graduation project</a>, 
+                        When graduating, I was awarded with best <a href="https://github.com/simonengstrm/Gravity">graduation project</a>, 
                         best grades, and became valedictorian. 
                         </p>
                     </div>
