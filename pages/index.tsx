@@ -86,7 +86,11 @@ function Technologies() {
                     <li>Haskell</li>
                     <li>TypeScript</li>
                     <li>JavaScript</li>
-                    <li>CSS</li>    
+                    <li>Python</li>
+                    <li>CSS</li>
+                    <li>HTML</li>    
+                    <li>SQL</li>
+                    <li>React</li>
                 </ul>
                 <ul>
                     <li>Git</li>
@@ -94,6 +98,9 @@ function Technologies() {
                     <li>node.js</li>
                     <li>express</li>
                     <li>Docker</li>
+                    <li>mongodb</li>       
+                    <li>PostgreSQL</li>
+                    <li>Next.js</li>
                 </ul>
                 <ul>
                     <li>Swedish 🇸🇪</li>
